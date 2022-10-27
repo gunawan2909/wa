@@ -64,4 +64,5 @@ app.post('/logout', (req, res) => {
     });
 });
 // run express
-app.listen();
+const port = process.env.PORT || 3000;
+app.listen(port, ()=> console.log('Apliksi Berhasi Berjalan'));
