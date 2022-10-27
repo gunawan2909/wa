@@ -22,7 +22,7 @@ app.get('/qr', (req, res) => {
         res.send(result);
     }
     else {
-        qrcode.default.toDataURL(wa.qrcode, (err, url) => {
+        qrcode.toDataURL(wa.qrcode, (err, url) => {
             if (err) {
                 const response = "<div><h1 style='text-align: center;' >" + err.message + "</h1></div></div>";
                 const result = body.replace('@body', response);
