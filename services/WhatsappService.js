@@ -35,7 +35,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.WhatsappService = void 0;
 const baileys_1 = __importStar(require("@adiwajshing/baileys"));
 const PhoneNumberFormatter_1 = require("../helper/PhoneNumberFormatter");
-const AUTH_FILE_LOCATION = './data/session.json';
+const AUTH_FILE_LOCATION = './session.json';
 const { state, saveState } = (0, baileys_1.useSingleFileAuthState)(AUTH_FILE_LOCATION);
 class WhatsappService {
     constructor() {
